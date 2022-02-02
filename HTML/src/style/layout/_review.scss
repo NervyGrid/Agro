@@ -1,0 +1,148 @@
+/* --------------------------------
+   review
+-------------------------------- */
+
+$gutter: 30px;
+
+.section--review
+{
+	background-repeat: no-repeat;
+	background-position: 50% 50%;
+}
+
+.review
+{
+	&__item
+	{
+		line-height: 1.2;
+
+		&__text
+		{
+			font-size: rem-calc(20px);
+			font-family: "Times New Roman";
+			color: #696248;
+
+			.section--dark-bg & { color: $white; }
+
+			p
+			{
+				margin-top: 20px;
+				margin-bottom: 20px;
+			}
+		}
+
+		&__author
+		{
+			width: auto;
+			margin-top: 30px;
+			font-size: rem-calc(18px);
+			font-family: $secondary-fontFamily;
+
+			&-image { margin-right: 20px; }
+
+			&-name
+			{
+				color: #333;
+
+				.section--dark-bg & { color: $white; }
+			}
+
+			&-position
+			{
+				display: block;
+				color: #adadad;
+
+				.section--dark-bg & { color: $white; }
+			}
+		}
+	}
+
+	&--slider
+	{
+		.slick-slider
+		{
+			overflow-x: hidden;
+		}
+
+		.slick-list
+		{
+			margin-left: -$gutter/2;
+			margin-right: -$gutter/2;
+		}
+
+		.slick-slide
+		{
+			padding-left: $gutter/2;
+			padding-right: $gutter/2;
+		}
+
+		.slick-dots
+		{
+			bottom: 28px;
+			right: 0;
+		}
+	}
+}
+
+@include media-breakpoint-up(sm)
+{
+	.review
+	{
+		margin-left: $gutter*2;
+
+		&:before
+		{
+			float: left;
+			margin-top: -15px;
+			margin-left: -$gutter*2;
+			content: "“";
+			line-height: 0.8;
+			font-size: rem-calc(100px);
+			font-family: "Times New Roman";
+			font-weight: 700;
+			color: $primary-color;
+		}
+
+		&__item
+		{
+			&__author
+			{
+				&-position { display: inline; }
+			}
+		}
+	}
+}
+
+@include media-breakpoint-up(md)
+{
+	.review
+	{
+		margin-left: $gutter*3;
+
+		&:before
+		{
+			margin-left: -$gutter*3;
+		}
+
+		&__item
+		{
+			&__text
+			{
+				font-size: rem-calc(25px);
+			}
+		}
+	}
+}
+
+@include media-breakpoint-up(lg)
+{
+	
+}
+
+@include media-breakpoint-up(xl)
+{
+	.review
+	{
+		margin-right: $gutter*3;
+	}
+}

@@ -1,0 +1,15 @@
+/* --------------------------------
+   brusher font
+-------------------------------- */
+
+@font-face
+{
+	font-family: 'Brusher';
+	src: local('Brusher'), local('Brusher-Regular'),
+		url('../fonts/brusher/Brusher-Regular.woff2') format('woff2'),
+		url('../fonts/brusher/Brusher-Regular.woff') format('woff'),
+		url('../fonts/brusher/Brusher-Regular.ttf') format('truetype'),
+		url('../fonts/brusher/Brusher-Regular.svg#Brusher-Regular') format('svg');
+	font-weight: normal;
+	font-style: normal;
+}

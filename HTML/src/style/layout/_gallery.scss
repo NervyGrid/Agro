@@ -1,0 +1,185 @@
+/* --------------------------------
+   gallery
+-------------------------------- */
+
+$gutter: 30px;
+$itemHeight: 290px;
+
+#gallery-set
+{
+	line-height: 0;
+	font-size: 0;
+	letter-spacing: -1px;
+	margin-left: -10px;
+	margin-bottom: 35px;
+
+	li,
+	a
+	{
+		display: inline-block;
+		vertical-align: top;
+	}
+
+	li
+	{
+		margin-left: 10px;
+		margin-bottom: 10px;
+		line-height: 1;
+	}
+
+	a
+	{
+		padding: 5px;
+		font: {
+			size: rem-calc(14px);
+			weight: 700;
+			family: $secondary-fontFamily;
+		};
+		text-decoration: none;
+		letter-spacing: 0;
+		color: #b3b3b3;
+
+		&.selected,
+		&:hover
+		{
+			color: #333;
+		}
+	}
+}
+
+.gallery
+{
+	.__inner { margin-bottom: -$gutter; }
+
+	.__item
+	{
+		position: relative;
+		width: 100%;
+		margin-bottom: $gutter;
+
+		&[data-y="2"] .__image { height: $itemHeight*2 + $gutter }
+
+		&:hover
+		{
+			.__image
+			{
+				img { transform: scale(1.2) translateZ(0); }
+
+				.__content
+				{
+					visibility: visible;
+					opacity: 1;
+				}
+			}
+		}
+	}
+
+	.__image
+	{
+		position: relative;
+		overflow: hidden;
+		width: 100%;
+		height: $itemHeight;
+		margin: 0;
+
+		img
+		{
+			@extend %block-absolute--full;
+			transform: translateZ(0);
+			@include object-fit(cover, 50% 50%);
+			@include transition(
+				transform 700ms cubic-bezier(0.25, 0.46, 0.45, 0.94),
+				opacity 200ms
+			);
+		}
+
+		.__content
+		{
+			display: flex;
+			justify-content: flex-end;
+			flex-direction: column;
+			height: 100%;
+			padding: 30px;
+			background-color: rgba(#333, 0.9);
+			text-decoration: none;
+			color: #b3b3b3;
+			visibility: hidden;
+			opacity: 0;
+
+			// @extend %block-absolute--full;
+
+			&__title { color: $white-color; }
+		}
+
+		.gallery__item__subtitle
+		{
+			font-size: rem-calc(12px);
+		}
+	}
+
+	.__content
+	{
+		position: relative;
+		width: 100%;
+		line-height: 1;
+		font-size: rem-calc(14px);
+		color: #666;
+		padding-top: rem-calc(20px);
+		@include transition(
+			visibility 300ms ease-in-out,
+			opacity 300ms ease-in-out
+		);
+
+		&__title { margin-bottom: 10px; }
+	}
+
+	.__link { @extend %block-absolute--full; }
+}
+
+.gallery--style-3
+{
+	.__inner { margin-bottom: 0; }
+
+	.__item
+	{
+		margin-bottom: 0;
+	}
+
+	.__image
+	{
+		height: 0;
+		padding-top: percentage(370/400);
+
+		.__content
+		{
+			align-items: center;
+			justify-content: center;
+			position: absolute;
+			top: 0;
+			left: 0;
+			background-color: rgba(#241610, 0.7);
+		}
+	}
+}
+
+#gallery-more-btn { margin-top: 40px; }
+
+@include media-breakpoint-up(sm)
+{
+	
+}
+
+@include media-breakpoint-up(md)
+{
+	#gallery-more-btn { margin-top: 55px; }
+}
+
+@include media-breakpoint-up(lg)
+{
+	#gallery-more-btn { margin-top: 70px; }
+}
+
+@include media-breakpoint-up(xl)
+{
+	
+}

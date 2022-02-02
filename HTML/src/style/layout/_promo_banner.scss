@@ -1,0 +1,47 @@
+/* --------------------------------
+   promo banner
+-------------------------------- */
+
+.promo-banners
+{
+	.row
+	{
+		margin-left: -5px;
+		margin-right: -5px;
+
+		> .col,
+		> [class*=col-]
+		{
+			padding-left: 5px;
+			padding-right: 5px;
+		}
+	}
+
+	.__inner { }
+
+	.__item
+	{
+		display: block;
+		margin: 15px 0;
+	}
+}
+
+@include media-breakpoint-up(sm)
+{
+	
+}
+
+@include media-breakpoint-up(md)
+{
+	
+}
+
+@include media-breakpoint-up(lg)
+{
+	
+}
+
+@include media-breakpoint-up(xl)
+{
+	
+}

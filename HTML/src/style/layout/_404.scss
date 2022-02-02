@@ -1,0 +1,41 @@
+/* --------------------------------
+   page arror
+-------------------------------- */
+
+.page-404
+{
+	border-bottom: 1px solid #dadada;
+
+	.__text
+	{
+		margin-bottom: 40px;
+		font-size: rem-calc(18px);
+		color: #b3b3b3;
+	}
+}
+
+@include media-breakpoint-up(sm)
+{
+	
+}
+
+@include media-breakpoint-up(md)
+{
+	
+}
+
+@include media-breakpoint-up(lg)
+{
+	.page-404
+	{
+		.__text
+		{
+			margin-bottom: 70px;
+		}
+	}
+}
+
+@include media-breakpoint-up(xl)
+{
+	
+}

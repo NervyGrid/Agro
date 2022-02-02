@@ -1,0 +1,59 @@
+/* --------------------------------
+   page navigation
+-------------------------------- */
+
+.page-nav
+{
+	display: flex;
+	flex-direction: row;
+	flex-wrap: wrap;
+	align-items: center;
+	justify-content: space-between;
+	margin-bottom: -30px;
+
+	&__item { margin-bottom: 30px; }
+
+	&__link
+	{
+		display: block;
+		line-height: 1;
+		font-size: rem-calc(18px);
+		font-weight: 700;
+		font-family: $secondary-fontFamily;
+		color: #b3b3b3 !important;
+
+		&--prev
+		{
+			.ico { margin-right: 15px; }
+		}
+
+		&--next
+		{
+			text-align: right;
+
+			.ico { margin-left: 15px; }
+		}
+
+		.ico { color: #ccc; }
+	}
+}
+
+@include media-breakpoint-up(sm)
+{
+	
+}
+
+@include media-breakpoint-up(md)
+{
+	
+}
+
+@include media-breakpoint-up(lg)
+{
+	
+}
+
+@include media-breakpoint-up(xl)
+{
+	
+}

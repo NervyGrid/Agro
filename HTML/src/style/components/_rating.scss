@@ -1,0 +1,80 @@
+/* --------------------------------
+   rating
+-------------------------------- */
+
+.rating
+{
+	$colorDefault: #cccccc;
+	$colorActive: #fac917;
+	$colorHover: #ffd778;
+
+	border: none;
+	line-height: 0;
+	font-size: 0;
+	letter-spacing: -1px;
+
+	&__item
+	{
+		display: inline-block;
+		vertical-align: top;
+		margin-left: 0.4em;
+		line-height: 1;
+		font-size: 1.4rem;
+		color: $colorDefault;
+		letter-spacing: 0;
+		user-select: none;
+		@include transition(color 0.3s ease-in-out);
+
+		&:first-child { margin-left: 0; }
+
+		&--active { color: $colorActive; }
+
+		i { display: block; }
+	}
+
+	input[type=radio]
+	{
+		position: absolute;
+		top: 0;
+		left: 0;
+		width: 0;
+		height: 0;
+		visibility: hidden;
+		opacity: 0;
+		clip: rect(2px,2px,2px,2px);
+	}
+
+	// https://codepen.io/jamesbarnett/pen/vlpkh
+
+	/***** CSS Magic to Highlight Stars on Hover *****/
+	& > input:checked ~ label, /* show gold star when clicked */
+	&:not(:checked) > label:hover, /* hover current star */
+	&:not(:checked) > label:hover ~ label { color: $colorActive;  } /* hover previous stars in list */
+
+	& > input:checked + label:hover, /* hover current star when changing rating */
+	& > input:checked ~ label:hover,
+	& > label:hover ~ input:checked ~ label, /* lighten current selection */
+	& > input:checked ~ label:hover ~ label { color: $colorHover; }
+
+	// or https://jsfiddle.net/leaverou/CGP87/
+}
+
+@include media-breakpoint-up(sm)
+{
+	
+}
+
+@include media-breakpoint-up(md)
+{
+	
+}
+
+@include media-breakpoint-up(lg)
+{
+	
+}
+
+@include media-breakpoint-up(xl)
+{
+	
+}

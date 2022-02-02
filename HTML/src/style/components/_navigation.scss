@@ -1,0 +1,108 @@
+/* --------------------------------
+   navigation
+-------------------------------- */
+
+.navigation
+{
+	position: relative;
+	text-align: left;
+
+	ul
+	{
+		line-height: 0;
+		font-size: 0;
+		letter-spacing: -1px;
+	}
+
+	li
+	{
+		position: relative;
+		display: inline-block;
+		vertical-align: middle;
+		line-height: 1;
+		font-size: rem-calc(13px);
+		text-transform: uppercase;
+		letter-spacing: 0;
+		white-space: normal;
+
+		&.active,
+		&:hover
+		{
+			>a:not(.custom-btn)
+			{
+				&:after
+				{
+					left: 0;
+					width: 100%;
+					opacity: 1;
+					visibility: visible;
+				}
+			}
+		}
+
+		a
+		{
+			&:not(.custom-btn)
+			{
+				position: relative;
+				display: inherit;
+				display: inline-block;
+				line-height: inherit;
+				font-size: inherit;
+				font-family: inherit;
+				@include transition(
+					background-color 0.3s ease-in-out,
+					border-color     0.3s ease-in-out,
+					color            0.3s ease-in-out
+				);
+
+				&:before,
+				&:after
+				{
+					pointer-events: none;
+				}
+
+				&:after
+				{
+					content: "";
+					display: block;
+					position: absolute;
+					top: 100%;
+					left: 50%;
+					width: 0;
+					height: 2px;
+					background-color: $primary-color;
+					opacity: 0;
+					visibility: hidden;
+					@include transition(
+						left       0.3s ease-in-out,
+						width      0.3s ease-in-out,
+						opacity    0.3s ease-in-out,
+						visibility 0.3s ease-in-out
+					);
+				}
+			}
+		}
+	}
+}
+
+
+@include min-screen($sm-width)
+{
+
+}
+
+@include min-screen($md-width)
+{
+
+}
+
+@include min-screen($lg-width)
+{
+
+}
+
+@include min-screen($xl-width)
+{
+
+}

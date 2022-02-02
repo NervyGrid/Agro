@@ -1,0 +1,41 @@
+/* --------------------------------
+   custom ion.rangeSlider styles
+-------------------------------- */
+
+.irs
+{
+	&--round
+	{
+		.irs-line
+		{
+			background-color: #f2f2f2;
+		}
+
+		.irs-bar { background-color: transparent; }
+
+		.irs-handle
+		{
+			top: 30px;
+			width: 15px;
+			height: 15px;
+			background-color: $white;
+			border: 2px solid $primary-color;
+			box-shadow: none;
+
+			&.state_hover,
+			&:hover
+			{
+				background-color: $white;
+			}
+		}
+
+		.irs-from,
+		.irs-single,
+		.irs-to
+		{
+			background-color: $primary-color;
+
+			&:before { border-top-color: $primary-color; }
+		}
+	}
+}

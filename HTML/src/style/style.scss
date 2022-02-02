@@ -1,0 +1,86 @@
+/* 
+	Template Name: Agro
+	Version: 1.1
+*/
+
+// Plugins
+@import '../libs/aos/sass/aos';
+@import '../libs/fancybox/jquery.fancybox.css';
+@import '../libs/ion.rangeSlider/css/ion.rangeSlider.css';
+@import '../libs/jarallax/jarallax.css';
+@import '../libs/nice-select/nice-select.css';
+@import '../libs/slick/slick.scss';
+
+@import 'utils/variables';
+@import 'utils/extends';
+@import 'utils/filters';
+@import 'utils/functions';
+@import 'utils/media-queries';
+@import 'utils/mixins';
+@import 'utils/angled-edges';
+
+// Required
+@import "vendors/bootstrap-4/functions";
+@import "vendors/bootstrap-4/variables";
+@import "vendors/bootstrap-4/mixins";
+// Optional
+@import "vendors/bootstrap-4/pagination";
+@import "vendors/bootstrap-4/utilities/align";
+@import "vendors/bootstrap-4/utilities/embed";
+@import "vendors/bootstrap-4/utilities/position";
+@import "vendors/bootstrap-4/utilities/sizing";
+@import "vendors/bootstrap-4/utilities/spacing";
+@import "vendors/bootstrap-4/utilities/text";
+
+@import 'vendors/brusher';
+@import 'vendors/storytella';
+
+@import 'vendors-extensions/slick';
+@import 'vendors-extensions/ion.rangeSlider';
+
+@import 'base/common';
+
+@import 'components/pagination';
+@import 'components/simple_banner';
+@import 'components/tab';
+@import 'components/comments_list';
+@import 'components/widget';
+@import 'components/counters';
+@import 'components/social_btns';
+@import 'components/to_top_btn';
+@import 'components/page_nav';
+@import 'components/product_label';
+@import 'components/product_price';
+@import 'components/quantity_counter';
+@import 'components/rating';
+
+@import 'layout/feature';
+@import 'layout/product_preview';
+@import 'layout/product_promo';
+@import 'layout/product_features';
+@import 'layout/products_list';
+@import 'layout/partners_list';
+@import 'layout/review';
+@import 'layout/recipes';
+@import 'layout/content';
+@import 'layout/custom_section';
+@import 'layout/posts';
+@import 'layout/company_contacts';
+@import 'layout/contact_form';
+@import 'layout/footer';
+
+@import 'layout/sidebar';
+@import 'layout/timeline';
+@import 'layout/team';
+@import 'layout/gallery';
+@import 'layout/text-block';
+@import 'layout/404';
+@import 'layout/woocommerce_page';
+@import 'layout/goods';
+@import 'layout/goods_catalog';
+@import 'layout/product_single';
+@import 'layout/cart';
+@import 'layout/checkout';
+@import 'layout/authorization_form';
+@import 'layout/advantages';
+@import 'layout/promo_banner';

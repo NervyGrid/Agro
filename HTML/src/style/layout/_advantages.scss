@@ -1,0 +1,76 @@
+/* --------------------------------
+   advantages
+-------------------------------- */
+
+$marginBottom: 30px;
+
+.advantages
+{
+	.__inner
+	{
+		margin-bottom: -$marginBottom;
+		overflow: hidden;
+	}
+
+	.__item
+	{
+		position: relative;
+		width: 100%;
+		margin-bottom: $marginBottom;
+		text-align: center;
+
+		@include media-breakpoint-up(sm)
+		{
+			// display: flex;
+			// flex-wrap: wrap;
+			// align-items: center;
+			// justify-content: center;
+
+			&:before
+			{
+				content: "";
+				position: absolute;
+				top: 30px;
+				left: -15px;
+				bottom: 30px;
+				border-left: 1px solid #e5e5e5;
+			}
+		}
+	}
+
+	.__ico
+	{
+		display: inline-block;
+		vertical-align: top;
+		line-height: 1;
+
+		>svg { vertical-align: middle; }
+	}
+
+	.__title
+	{
+		margin-bottom: 5px;
+		font-weight: 700;
+		text-transform: none;
+	}
+}
+
+@include media-breakpoint-up(sm)
+{
+	
+}
+
+@include media-breakpoint-up(md)
+{
+	
+}
+
+@include media-breakpoint-up(lg)
+{
+	
+}
+
+@include media-breakpoint-up(xl)
+{
+	
+}

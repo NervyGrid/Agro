@@ -1,0 +1,15 @@
+/* --------------------------------
+   storytella font
+-------------------------------- */
+
+@font-face
+{
+	font-family: 'Storytella';
+	src: local('Storytella'),
+		url('../fonts/storytella/Storytella.woff2') format('woff2'),
+		url('../fonts/storytella/Storytella.woff') format('woff'),
+		url('../fonts/storytella/Storytella.ttf') format('truetype'),
+		url('../fonts/storytella/Storytella.svg#Storytella') format('svg');
+	font-weight: normal;
+	font-style: normal;
+}

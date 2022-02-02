@@ -1,0 +1,326 @@
+@@include('template/document_start.html')
+
+	<body>
+		<div id="app">
+			<!-- start header -->
+			<header id="top-bar" class="top-bar top-bar--style-1">
+				<div class="top-bar__bg" style="background-color: #24292c;background-image: url(img/top_bar_bg-1.jpg);background-repeat: no-repeat;background-position: left bottom;"></div>
+
+				<div class="container-fluid">
+					<div class="row align-items-center justify-content-between no-gutters">
+
+						<a class="top-bar__logo site-logo" href="index.html">
+							<img class="img-fluid" src="img/site_logo.png" alt="demo" />
+						</a>
+
+						<a id="top-bar__navigation-toggler" class="top-bar__navigation-toggler top-bar__navigation-toggler--light" href="javascript:void(0);"><span></span></a>
+
+						<div id="top-bar__inner" class="top-bar__inner">
+							<div>
+								<nav id="top-bar__navigation" class="top-bar__navigation navigation" role="navigation">
+									<ul>
+										<li class="has-submenu">
+											<a href="javascript:void(0);">Home</a>
+
+											<ul class="submenu">
+												<li><a href="index.html">Home 1</a></li>
+												<li><a href="index_2.html">Home 2</a></li>
+												<li><a href="index_3.html">Home 3</a></li>
+												<li><a href="index_4.html">Home Shop</a></li>
+											</ul>
+										</li>
+
+										<li>
+											<a href="about.html">About</a>
+										</li>
+
+										<li class="active has-submenu">
+											<a href="javascript:void(0);">Pages</a>
+
+											<ul class="submenu">
+												<li><a href="services.html">Services</a></li>
+												<li><a href="products.html">Products</a></li>
+												<li><a href="products_details.html">Product Details</a></li>
+												<li><a href="gallery_1.html">Gallery 1</a></li>
+												<li><a href="gallery_2.html">Gallery 2</a></li>
+												<li class="active"><a href="typography.html">Typography</a></li>
+												<li><a href="404.html">404 page</a></li>
+											</ul>
+										</li>
+
+										<li class="has-submenu">
+											<a href="javascript:void(0);">Shop</a>
+
+											<ul class="submenu">
+												<li><a href="shop_catalog.html">Shop Catalog</a></li>
+												<li><a href="single_product.html">Single Product</a></li>
+												<li><a href="cart.html">Cart</a></li>
+												<li><a href="checkout.html">Checkout</a></li>
+												<li><a href="sign_in.html">Sign In/Up</a></li>
+											</ul>
+										</li>
+
+										<li>
+											<a href="blog.html">Blog</a>
+										</li>
+
+										<li>
+											<a href="contacts.html">Contacts</a>
+										</li>
+
+										<li class="li-btn">
+											<a class="custom-btn custom-btn--small custom-btn--style-4" href="#">Get in Touch</a>
+										</li>
+									</ul>
+								</nav>
+							</div>
+						</div>
+
+					</div>
+				</div>
+			</header>
+			<!-- end header -->
+
+			<!-- start hero -->
+			<div id="hero" class="jarallax" data-speed="0.7" data-img-position="50% 75%" style="background-image: url(img/intro_img/6.jpg);">
+				<div class="container">
+					<div class="row">
+						<div class="col-12 col-lg-7">
+							<h1 class="__title"><span>AgRO</span> Typography</h1>
+
+							<p>
+								The point of using Lorem Ipsum is that it has a more-or-less normal distribution of letters, as opposed to using 'Content here, content here', making it look like readable English
+							</p>
+						</div>
+					</div>
+				</div>
+			</div>
+			<!-- end hero -->
+
+			<!-- start main -->
+			<main role="main">
+				<!-- Common styles
+				================================================== -->
+				<link rel="stylesheet" href="css/style.min.css" type="text/css">
+
+				<!-- Load lazyLoad scripts
+				================================================== -->
+				@@include('template/LazyLoad_scripts.html')
+
+				<!-- start section -->
+				<section class="section">
+					<div class="container">
+						<div class="row">
+							<div class="col-12 col-md-8 col-lg-9">
+								<div class="content-container">
+									<h1>H1 Heading <span>Looks Like</span></h1>
+									<h2>H2 Heading <span>Looks Like This</span></h2>
+									<h3>H3 Heading <span>Looks Like This</span></h3>
+									<h4>H4 Heading <span>Looks Like This</span></h4>
+									<h5>H5 Heading <span>Looks Like This</span></h5>
+									<h6>H6 Heading <span>Looks Like This</span></h6>
+
+									<hr>
+
+									<h6>Paragraphs</h6>
+
+									<p>
+										We believe in helping brands create <a href="#">through strategy</a>, story-telling, digital products, and integrated experiences on web, mobile, and in the world. And you're here, friends, because you also believe.
+									</p>
+
+									<p>
+										Our team has a passion for making things with real value. This has led us to assemble a multi-talented group that can do just about anything: from building sets to photographing food, crafting websites to developing apps, beautiful design to adventure cinematography. Designers, engineers, creatives, makers, developers, artists, unite. Let’s do something real-special together.
+									</p>
+
+									<hr>
+
+									<h6>Dropcaps</h6>
+
+									<p class="dropcaps">
+										<span class="first-letter">L</span> We believe in helping brands create through strategy, and integrated experiences on web, mobile, and in the world. And you're here, friends, because you also believe.Our team has a passion for making things with real value. This has led us to assemble a multi-talented group that can do just about anything: from building sets to photographing food, crafting websites to developing apps, beautiful design to adventure cinematography. Designers, engineers, creatives, makers, developers, artists, unite. Let’s do something real-special together.
+									</p>
+
+									<hr>
+
+									<h6>Blockquotes</h6>
+
+									<blockquote class="blockquot">
+										<p>
+											<i>This has led us to assemble a multi-talented group that can do just about anything: from building sets to photographing food, crafting websites to developing apps, beautiful design to adventure cinematography. Designers, engineers, creatives,</i>
+										</p>
+									</blockquote>
+
+									<hr>
+
+									<h6>Highlighter</h6>
+
+									<p class="highlighter">
+										We believe in helping brands create <span>through strategy, story-telling,</span> digital products, and integrated experiences on web, mobile, and in the world. And you're here, friends, because you also believe. Our team has a passion for making things with real value. This has led us to assemble a multi-talented group that can do just about anything: from building sets to photographing food, crafting websites to developing apps, beautiful design to adventure cinematography. Designers, engineers, creatives, makers, developers, artists, unite. Let’s do something real-special together.
+									</p>
+
+									<hr>
+
+									<h6>Standard Listings</h6>
+
+									<div class="row">
+										<div class="col-lg-6">
+											<div class="col-MB-20">
+												<ol>
+													<li>Enim congue blandit lorem ipsum dolor sit amet.</li>
+													<li>Interdum finibus. Vestibulum ante ipsum primis.</li>
+													<li>Posuere cubilia cras blandit porttitor arcu volutp.</li>
+													<li>Vel <a href="#">tempus sapien. Vivamus</a> aliquam euismod.</li>
+												</ol>
+											</div>
+										</div>
+
+										<div class="col-lg-6">
+											<div class="col-MB-20">
+												<ul>
+													<li>Enim congue blandit lorem ipsum dolor sit amet.</li>
+													<li>Interdum finibus. Vestibulum ante ipsum primis.</li>
+													<li>Posuere cubilia cras blandit porttitor arcu volutp.</li>
+													<li>Vel <a href="#">tempus sapien. Vivamus</a> aliquam euismod.</li>
+												</ul>
+											</div>
+										</div>
+									</div>
+								</div>
+							</div>
+
+							<div class="col-12 my-6 d-md-none"></div>
+
+							<div class="col-12 col-md-4 col-lg-3">
+								<aside class="sidebar">
+									<!-- start widget -->
+									<div class="widget widget--text">
+										<h4 class="h6 widget-title">About</h4>
+
+										<p>
+											We believe in helping brands create through strategy, story-telling, digital products, and integrated experiences on web, mobile, and in the world.
+										</p>
+									</div>
+									<!-- end widget -->
+
+									<!-- start widget -->
+									<div class="widget widget--categories">
+										<h4 class="h6 widget-title">CAtegories</h4>
+
+										<ul class="list">
+											<li class="list__item">
+												<a class="list__item__link" href="#">Strategy</a>
+												<span>(3)</span>
+											</li>
+
+											<li class="list__item">
+												<a class="list__item__link" href="#">Technology</a>
+												<span>(5)</span>
+											</li>
+
+											<li class="list__item">
+												<a class="list__item__link" href="#">Creative</a>
+												<span>(2)</span>
+											</li>
+
+											<li class="list__item">
+												<a class="list__item__link" href="#">Content</a>
+												<span>(8)</span>
+											</li>
+										</ul>
+									</div>
+									<!-- end widget -->
+
+									<!-- start widget -->
+									<div class="widget widget--search">
+										<form class="form--horizontal" action="#" method="get">
+											<div class="input-wrp">
+												<input class="textfield" name="s" type="text" placeholder="Search" />
+											</div>
+
+											<button class="custom-btn custom-btn--tiny custom-btn--style-1" type="submit" role="button">Find</button>
+										</form>
+									</div>
+									<!-- end widget -->
+
+									<!-- start widget -->
+									<div class="widget widget--posts">
+										<h4 class="h6 widget-title">Features Posts</h4>
+
+										<div>
+											<article>
+												<a class="link" href="#">
+													<img class="lazy" width="100" height="75" src="img/blank.gif" data-src="img/posts_img/1s.jpg" alt="demo" />
+												</a>
+
+												<div>
+													This has led us to assemble a multi
+
+													<span class="date-post">April 12, 2017</span>
+												</div>
+											</article>
+
+											<article>
+												<a class="link" href="#">
+													<img class="lazy" width="100" height="75" src="img/blank.gif" data-src="img/posts_img/2s.jpg" alt="demo" />
+												</a>
+
+												<div>
+													Our team has a passion for making things with
+
+													<span class="date-post">April 12, 2017</span>
+												</div>
+											</article>
+										</div>
+									</div>
+									<!-- end widget -->
+
+									<!-- start widget -->
+									<div class="widget widget--tags">
+										<h4 class="h6 widget-title">Popular Tags</h4>
+
+										<ul>
+											<li><a href="#">Art</a></li>
+											<li><a href="#">design</a></li>
+											<li><a href="#">concept</a></li>
+											<li><a href="#">Media</a></li>
+											<li><a href="#">Photography</a></li>
+											<li><a href="#">UI</a></li>
+										</ul>
+									</div>
+									<!-- end widget -->
+
+									<!-- start widget -->
+									<div class="widget widget--banner">
+										<a href="#"><img class="img-fluid  lazy" src="img/blank.gif" data-src="img/widget_banner.jpg" alt="demo" /></a>
+									</div>
+									<!-- end widget -->
+								</aside>
+							</div>
+						</div>
+					</div>
+				</section>
+				<!-- end section -->
+
+				<!-- start section -->
+				<section class="section section--dark-bg">
+					<div class="container">
+						@@include('template/contact_form.html')
+					</div>
+				</section>
+				<!-- end section -->
+
+				<!-- start section -->
+				<section class="section section--no-pt section--no-pb">
+					<!-- this is demo key "AIzaSyBXQROV5YMCERGIIuwxrmaZbBl_Wm4Dy5U" -->
+					<div class="g_map" data-api-key="AIzaSyBXQROV5YMCERGIIuwxrmaZbBl_Wm4Dy5U" data-longitude="44.958309" data-latitude="34.109925" data-marker="img/marker.png" style="min-height: 255px"></div>
+				</section>
+				<!-- end section -->
+			</main>
+			<!-- end main -->
+
+			<!-- start footer -->
+			@@include('template/footer.html')
+			<!-- end footer -->
+		</div>
+
+@@include('template/document_end.html')

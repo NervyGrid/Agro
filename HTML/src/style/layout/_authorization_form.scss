@@ -1,0 +1,65 @@
+/* --------------------------------
+   authorization form
+-------------------------------- */
+
+.auth-form
+{
+	button[type=submit]
+	{
+		min-width: 0;
+
+		&:first-child
+		{
+			margin-top: 0;
+			margin-right: 20px;
+		}
+	}
+
+	.link-forgot
+	{
+		display: inline-block;
+		margin-top: 20px;
+		line-height: 1.2;
+		font-size: 1.4rem;
+		text-decoration: underline;
+		color: #7f7345;
+
+		&:hover,
+		&:focus
+		{
+			text-decoration: none;
+		}
+	}
+
+	.link-to
+	{
+		display: block;
+		padding: 5px;
+		line-height: 1.4;
+		font-size: 1.2rem;
+		font-family: $secondary-fontFamily;
+		font-weight: 700;
+		text-transform: uppercase;
+		color: #4f4a37;
+	}
+}
+
+@include media-breakpoint-up(sm)
+{
+	
+}
+
+@include media-breakpoint-up(md)
+{
+	
+}
+
+@include media-breakpoint-up(lg)
+{
+	
+}
+
+@include media-breakpoint-up(xl)
+{
+	
+}

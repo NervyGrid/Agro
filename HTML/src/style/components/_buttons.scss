@@ -1,0 +1,167 @@
+/* --------------------------------
+   buttons
+-------------------------------- */
+
+.custom-btn
+{
+	position: relative;
+	display: inline-block;
+	vertical-align: middle;
+	padding-left: 28px;
+	padding-right: 28px;
+	line-height: 1;
+	font:
+	{
+		size: rem-calc(12px);
+		family: $secondary-fontFamily;
+		weight: 700;
+	};
+	text:
+	{
+		align: center !important;
+		decoration: none !important;
+		shadow: none !important;
+		transform: uppercase;
+	};
+	letter-spacing: 0;
+	color: #4f4a37;
+	border: 2px solid $primary-color;
+	@include border-radius(30px);
+	box-shadow: none;
+	outline: none;
+	cursor: pointer;
+	user-select: none;
+	-webkit-user-drag: none;
+	user-drag: none;
+	-ms-touch-action: manipulation;
+	touch-action: manipulation;
+	@include transition(
+		background-color 0.25s ease-in-out,
+		border-color     0.25s ease-in-out,
+		color            0.25s ease-in-out
+	);
+
+	&:hover,
+	&:focus
+	{
+		color: #4f4a37;
+	}
+
+	&--tiny
+	{
+		min-width: 85px;
+		min-height: 35px;
+		padding-top: 11px;
+		padding-bottom: 10px;
+		font-size: rem-calc(10px);
+	}
+
+	&--small
+	{
+		min-width: 160px;
+		min-height: 45px;
+		padding-top: 15px;
+		padding-bottom: 14px;
+	}
+
+	&--medium
+	{
+		min-width: 160px;
+		min-height: 54px;
+		padding-top: 19px;
+		padding-bottom: 19px;
+	}
+
+	&--big
+	{
+		min-width: 200px;
+		min-height: 65px;
+		padding-top: 24px;
+		padding-bottom: 24px;
+		font-size: rem-calc(13px);
+	}
+
+	&.custom-btn--style-1
+	{
+		background-color: transparent;
+
+		&:hover,
+		&:focus
+		{
+			background-color: $primary-color;
+		}
+	}
+
+	&.custom-btn--style-2
+	{
+		background-color: $primary-color;
+
+		&:hover,
+		&:focus
+		{
+			background-color: transparent;
+		}
+	}
+
+	&.custom-btn--style-3
+	{
+		background-color: transparent;
+		color: $white;
+
+		&:hover,
+		&:focus
+		{
+			background-color: $primary-color;
+			color: #4f4a37;
+		}
+	}
+
+	&.custom-btn--style-4
+	{
+		background-color: $primary-color;
+
+		&:hover,
+		&:focus
+		{
+			background-color: transparent;
+			color: $white;
+		}
+	}
+
+	&.custom-btn--style-5
+	{
+		background-color: $white;
+		border-color: $white;
+		color: #1b1b1b;
+
+		&:hover,
+		&:focus
+		{
+			background-color: $primary-color;
+			border-color: $primary-color;
+			color: #4f4a37;
+		}
+	}
+
+	&.wide { width: 100%; }
+}
+
+@include min-screen($sm-width)
+{
+
+}
+
+@include min-screen($md-width)
+{
+
+}
+
+@include min-screen($lg-width)
+{
+
+}
+
+@include min-screen($xl-width)
+{
+
+}

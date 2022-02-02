@@ -1,0 +1,218 @@
+@@include('template/document_start.html')
+
+	<body>
+		<div id="app">
+			<!-- start header -->
+			<header id="top-bar" class="top-bar top-bar--style-1">
+				<div class="top-bar__bg" style="background-color: #24292c;background-image: url(img/top_bar_bg-1.jpg);background-repeat: no-repeat;background-position: left bottom;"></div>
+
+				<div class="container-fluid">
+					<div class="row align-items-center justify-content-between no-gutters">
+
+						<a class="top-bar__logo site-logo" href="index.html">
+							<img class="img-fluid" src="img/site_logo.png" alt="demo" />
+						</a>
+
+						<a id="top-bar__navigation-toggler" class="top-bar__navigation-toggler top-bar__navigation-toggler--light" href="javascript:void(0);"><span></span></a>
+
+						<div id="top-bar__inner" class="top-bar__inner">
+							<div>
+								<nav id="top-bar__navigation" class="top-bar__navigation navigation" role="navigation">
+									<ul>
+										<li class="has-submenu">
+											<a href="javascript:void(0);">Home</a>
+
+											<ul class="submenu">
+												<li><a href="index.html">Home 1</a></li>
+												<li><a href="index_2.html">Home 2</a></li>
+												<li><a href="index_3.html">Home 3</a></li>
+												<li><a href="index_4.html">Home Shop</a></li>
+											</ul>
+										</li>
+
+										<li>
+											<a href="about.html">About</a>
+										</li>
+
+										<li class="has-submenu">
+											<a href="javascript:void(0);">Pages</a>
+
+											<ul class="submenu">
+												<li><a href="services.html">Services</a></li>
+												<li><a href="products.html">Products</a></li>
+												<li><a href="products_details.html">Product Details</a></li>
+												<li><a href="gallery_1.html">Gallery 1</a></li>
+												<li><a href="gallery_2.html">Gallery 2</a></li>
+												<li><a href="typography.html">Typography</a></li>
+												<li><a href="404.html">404 page</a></li>
+											</ul>
+										</li>
+
+										<li class="has-submenu">
+											<a href="javascript:void(0);">Shop</a>
+
+											<ul class="submenu">
+												<li><a href="shop_catalog.html">Shop Catalog</a></li>
+												<li><a href="single_product.html">Single Product</a></li>
+												<li><a href="cart.html">Cart</a></li>
+												<li><a href="checkout.html">Checkout</a></li>
+												<li><a href="sign_in.html">Sign In/Up</a></li>
+											</ul>
+										</li>
+
+										<li>
+											<a href="blog.html">Blog</a>
+										</li>
+
+										<li class="active">
+											<a href="contacts.html">Contacts</a>
+										</li>
+
+										<li class="li-btn">
+											<a class="custom-btn custom-btn--small custom-btn--style-4" href="#">Get in Touch</a>
+										</li>
+									</ul>
+								</nav>
+							</div>
+						</div>
+
+					</div>
+				</div>
+			</header>
+			<!-- end header -->
+
+			<!-- start hero -->
+			<div id="hero" class="jarallax" data-speed="0.7" data-img-position="50% 55%" style="background-image: url(img/intro_img/7.jpg);">
+				<div class="container">
+					<div class="row">
+						<div class="col-12 col-lg-7">
+							<h1 class="__title"><span>Agro</span> Contact Us</h1>
+
+							<p>
+								The point of using Lorem Ipsum is that it has a more-or-less normal distribution of letters, as opposed to using 'Content here, content here', making it look like readable English
+							</p>
+						</div>
+					</div>
+				</div>
+			</div>
+			<!-- end hero -->
+
+			<!-- start main -->
+			<main role="main">
+				<!-- Common styles
+				================================================== -->
+				<link rel="stylesheet" href="css/style.min.css" type="text/css">
+
+				<!-- Load lazyLoad scripts
+				================================================== -->
+				@@include('template/LazyLoad_scripts.html')
+
+				<!-- start section -->
+				<section class="section">
+					<div class="container">
+						<!-- start company contacts -->
+						<div class="company-contacts  text-center">
+							<div class="__inner">
+								<div class="row justify-content-around">
+									<!-- start item -->
+									<div class="col-12 col-md-4 col-lg-3">
+										<div class="__item">
+											<i class="__ico fontello-location"></i>
+
+											<h4 class="__title">adress</h4>
+
+											<p>
+												523 Sylvan Ave, 5th Floor Mountain View, CA 94041USA
+											</p>
+										</div>
+									</div>
+									<!-- end item -->
+
+									<!-- start item -->
+									<div class="col-12 col-md-4 col-lg-3">
+										<div class="__item">
+											<i class="__ico fontello-phone"></i>
+
+											<h4 class="__title">phone</h4>
+
+											<p>
+												+1 (234) 56789,<br>+1 987 654 3210
+											</p>
+										</div>
+									</div>
+									<!-- end item -->
+
+									<!-- start item -->
+									<div class="col-12 col-md-4 col-lg-3">
+										<div class="__item">
+											<i class="__ico fontello-mail-1"></i>
+
+											<h4 class="__title">e-mail</h4>
+
+											<p><a href="mailto:support@agrocompany.com">support@agrocompany.com</a></p>
+										</div>
+									</div>
+									<!-- end item -->
+								</div>
+							</div>
+						</div>
+						<!-- end company contacts -->
+					</div>
+				</section>
+				<!-- end section -->
+
+				<!-- start section -->
+				<section class="section section--dark-bg  section--contacts">
+					<div class="container">
+						<div class="row justify-content-end">
+							<div class="col-12 col-md-6">
+
+								<div class="row justify-content-end">
+									<div class="col-md-11">
+										<div class="section-heading section-heading--white">
+											<h2 class="__title">Get <span>in touch</span></h2>
+
+											<p>Latin words, combined with a handful of model sentence structures, to generate Lorem Ipsum which looks reasonable.</p>
+										</div>
+
+										<form class="contact-form js-contact-form" action="#">
+											<div class="input-wrp">
+												<input class="textfield" name="name" type="text" placeholder="Name" />
+											</div>
+
+											<div class="input-wrp">
+												<input class="textfield" name="email" type="text" placeholder="E-mail" />
+											</div>
+
+											<div class="input-wrp">
+												<textarea class="textfield" name="message" placeholder="Comments"></textarea>
+											</div>
+
+											<button class="custom-btn custom-btn--medium custom-btn--style-3 wide" type="submit" role="button">Send</button>
+
+											<div class="form__note"></div>
+										</form>
+									</div>
+								</div>
+
+							</div>
+						</div>
+					</div>
+
+					<div class="row no-gutters">
+						<div class="col-md-6  map-container map-container--left">
+							<!-- this is demo key "AIzaSyBXQROV5YMCERGIIuwxrmaZbBl_Wm4Dy5U" -->
+							<div class="g_map" data-api-key="AIzaSyBXQROV5YMCERGIIuwxrmaZbBl_Wm4Dy5U" data-longitude="44.958309" data-latitude="34.109925" data-marker="img/marker.png" style="min-height: 255px"></div>
+						</div>
+					</div>
+				</section>
+				<!-- end section -->
+			</main>
+			<!-- end main -->
+
+			<!-- start footer -->
+			@@include('template/footer.html')
+			<!-- end footer -->
+		</div>
+
+@@include('template/document_end.html')

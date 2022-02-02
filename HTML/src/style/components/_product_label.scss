@@ -1,0 +1,43 @@
+/* --------------------------------
+   product label
+-------------------------------- */
+
+.product-label
+{
+	position: absolute;
+	top: 5px;
+	left: 5px;
+	min-width: 60px;
+	padding: 9px 15px;
+	line-height: 1;
+	font-size: 1.2rem;
+	font-weight: 700;
+	text-align: center;
+	text-transform: uppercase;
+	color: $white;
+	user-select: none;
+
+	&--new  { background-color: #4bbe60; }
+	&--hot  { background-color: #eb9f34; }
+	&--sale { background-color: #f26666; }
+}
+
+@include media-breakpoint-up(sm)
+{
+	
+}
+
+@include media-breakpoint-up(md)
+{
+	
+}
+
+@include media-breakpoint-up(lg)
+{
+	
+}
+
+@include media-breakpoint-up(xl)
+{
+	
+}

@@ -1,0 +1,268 @@
+@@include('template/document_start.html')
+
+	<body>
+		<div id="app">
+			<style type="text/css">
+				.custom-btn:hover,
+				.custom-btn:focus {
+					color: #fff;
+				}
+				#demos {
+					
+					background-image: url(demo_img/elements_back.png);
+					background-repeat: no-repeat;
+					background-position: 50% 50%;
+				}
+				.c-demos .__inner {
+					margin-bottom: -50px
+				}
+				.c-demos .__item {
+					position: relative;
+					width: 100%;
+					margin-bottom: 50px
+				}
+				.desktop .c-demos .__item:hover .__image {
+					-webkit-transform: translateY(-10px);
+					-ms-transform: translateY(-10px);
+					transform: translateY(-10px);
+				}
+				.c-demos .__item:hover .custom-btn {
+					opacity: 1
+				}
+				.c-demos .__image {
+					position: relative;
+					margin: auto auto 40px;
+					-webkit-box-shadow: 0 0 57px rgba(0,0,0,.21);
+					box-shadow: 0 0 57px rgba(0,0,0,.21);
+					-webkit-transition: -webkit-transform .3s;
+					transition: transform .3s;
+					-o-transition: transform .3s;
+					transition: transform .3s,-webkit-transform .3s;
+				}
+				.c-demos .__image img {
+				display: block
+					}
+				.c-demos .custom-btn {
+					position: absolute;
+					top: 0;
+					right: 0;
+					bottom: 0;
+					left: 0;
+					margin: auto;
+					width: 160px;
+					height: 55px;
+					opacity: 0
+				}
+				.c-demos .custom-btn:not(:hover):not(:focus) {
+				background-color: #fff
+				}
+				.c-demos .__title {
+					font-weight: 700;
+					text-align: center;
+					text-transform: none
+				}
+				.c-text {
+					margin-bottom: -5%
+				}
+			</style>
+
+			<!-- start hero -->
+			<div class="c-hero jarallax" data-speed="0.7" data-img-position="50% 30%" style="background-image: url('demo_img/bg.jpg')">
+				<div class="container">
+					<div class="row align-items-center justify-content-between">
+						<div class="col-auto">
+							<img class="img-fluid" src="img/site_logo.png" alt="demo" />
+						</div>
+
+						<div class="col-auto">
+							<a class="custom-btn custom-btn--small custom-btn--style-2" href="#demos">See Demos</a>
+						</div>
+					</div>
+
+					<div class="section-heading section-heading--center">
+						<h2 class="__title text-white">Agriculture & <br> <span>organic food template</span></h3>
+					</div>
+				</div>
+
+				<div class="container-fluid">
+					<div class="text-center d-none d-sm-block">
+
+						<img class="img-fluid" src="demo_img/screens_1.png" alt="demo">
+					</div>
+				</div>
+			</div>
+			<!-- end hero -->
+
+			<!-- start main -->
+			<main role="main">
+				<!-- Common styles
+				================================================== -->
+				<link rel="stylesheet" href="css/style.min.css" type="text/css">
+
+				<!-- Load lazyLoad scripts
+				================================================== -->
+				@@include('template/LazyLoad_scripts.html')
+
+				<!-- start section -->
+				<section id="demos" class="section">
+					<div class="container">
+						<div class="section-heading section-heading--center" data-aos="fade">
+							<h3 class="__title">demos of agriculture <br> <span>& organic food template </span></h3>
+						</div>
+
+						<div class="c-demos">
+							<div class="__inner">
+								<div class="row">
+									<div class="col-12 col-md-6 col-lg-4">
+										<div class="__item" data-aos="fade-up" data-aos-offset="100" data-aos-duration="400" data-aos-delay="0">
+											<figure class="__image">
+
+												<img class="img-fluid lazy" data-src="demo_img/d1.jpg" alt="">
+
+												<a class="custom-btn custom-btn--medium custom-btn--style-1" href="index.html" target="_blank">See demo</a>
+											</figure>
+
+											<h5 class="__title"><a href="index.html" target="_blank">Agriculture Farm</a></h5>
+										</div>
+									</div>
+
+									<div class="col-12 col-md-6 col-lg-4">
+										<div class="__item" data-aos="fade-up" data-aos-offset="100" data-aos-duration="400" data-aos-delay="150">
+											<figure class="__image">
+
+												<img class="img-fluid lazy" data-src="demo_img/d2.jpg" alt="">
+
+												<a class="custom-btn custom-btn--medium custom-btn--style-1" href="index_2.html" target="_blank">See demo</a>
+											</figure>
+
+											<h5 class="__title"><a href="index_2.html" target="_blank">Fruits & Vegatebles Farm</a></h5>
+										</div>
+									</div>
+
+									<div class="col-12 col-md-6 col-lg-4">
+										<div class="__item" data-aos="fade-up" data-aos-offset="100" data-aos-duration="400" data-aos-delay="300">
+											<figure class="__image">
+
+												<img class="img-fluid lazy" data-src="demo_img/d3.jpg" alt="">
+
+												<a class="custom-btn custom-btn--medium custom-btn--style-1" href="index_3.html" target="_blank">See demo</a>
+											</figure>
+
+											<h5 class="__title"><a href="index_3.html" target="_blank">Organic Food</a></h5>
+										</div>
+									</div>
+								</div>
+							</div>
+						</div>
+					</div>
+				</section>
+				<!-- end section -->
+
+				<!-- start section -->
+				<section class="section  lazy" data-src="img/review_bg_1.png" style="background-position: center bottom -55%; background-repeat: no-repeat;">
+					<div class="container">
+						<div class="section-heading section-heading--center" data-aos="fade">
+							<h3 class="__title">Agro template  <span>benefits</span></h3>
+						</div>
+
+						<!-- start counters -->
+						<div class="counter">
+							<div class="__inner">
+								<div class="row justify-content-sm-center justify-content-lg-around">
+									<!-- start item -->
+									<div class="col-12 col-sm-8 col-md-6 col-lg-3">
+										<div class="__item" data-aos="zoom-in" data-aos-duration="350" data-aos-delay="150">
+											<div class="d-table">
+												<div class="d-table-cell align-middle">
+													<i class="__ico">
+														<img class="img-fluid  lazy" src="img/blank.gif" data-src="img/ico/ico_count_5.png" alt="demo" />
+													</i>
+												</div>
+
+												<div class="d-table-cell align-middle">
+													<p class="__count" style="color: #ff6262">3</p>
+
+													<p class="__title">Home Pages</p>
+												</div>
+											</div>
+										</div>
+									</div>
+									<!-- end item -->
+
+									<!-- start item -->
+									<div class="col-12 col-sm-8 col-md-6 col-lg-3">
+										<div class="__item" data-aos="zoom-in" data-aos-duration="350" data-aos-delay="300">
+											<div class="d-table">
+												<div class="d-table-cell align-middle">
+													<i class="__ico">
+														<img class="img-fluid  lazy" src="img/blank.gif" data-src="img/ico/ico_count_6.png" alt="demo" />
+													</i>
+												</div>
+
+												<div class="d-table-cell align-middle">
+													<p class="__count" style="color: #5e9a4b">14</p>
+
+													<p class="__title">Additional Pages</p>
+												</div>
+											</div>
+										</div>
+									</div>
+									<!-- end item -->
+
+									<!-- start item -->
+									<div class="col-12 col-sm-8 col-md-6 col-lg-3">
+										<div class="__item" data-aos="zoom-in" data-aos-duration="350" data-aos-delay="450">
+											<div class="d-table">
+												<div class="d-table-cell align-middle">
+													<i class="__ico">
+														<img class="img-fluid  lazy" src="img/blank.gif" data-src="img/ico/ico_count_7.png" alt="demo" />
+													</i>
+												</div>
+
+												<div class="d-table-cell align-middle">
+													<p class="__count" style="color: #ffbb4c">200+</p>
+
+													<p class="__title">Elements</p>
+												</div>
+											</div>
+										</div>
+									</div>
+									<!-- end item -->
+								</div>
+							</div>
+						</div>
+						<!-- end counters -->
+
+						<div class="my-6 my-lg-12 py-6"></div>
+					</div>
+				</section>
+				<!-- end section -->
+
+				<!-- start section -->
+				<section class="section section--no-pt section--dark-bg jarallax" data-speed="0.5" data-img-position="50% 80%">
+					<img class="jarallax-img  lazy" data-src="img/bg_2.jpg" alt="demo" />
+
+					<div class="container">
+						<div class="text-right mb-8 mb-md-12">
+							<img class="img-fluid" src="img/site_logo.png" alt="demo" />
+						</div>
+
+						<div class="section-heading section-heading--white section-heading--center" data-aos="fade">
+							<h3 class="__title">You can Buy Agro  <span>template</span></h3>
+						</div>
+
+						<div class="text-center">
+							<a class="custom-btn custom-btn--medium custom-btn--style-3" href="#">Buy Agro HTML Template</a>
+						</div>
+
+						<div class="c-text text-center text-white mt-6 mt-md-12 pt-md-8">
+							<p>Copyright © 2019. All rights are reserved</p>
+						</div>
+					</div>
+				</section>
+				<!-- end section -->
+			</main>
+			<!-- end main -->
+		</div>
+
+@@include('template/document_end.html')

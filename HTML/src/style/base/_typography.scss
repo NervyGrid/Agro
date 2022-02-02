@@ -1,0 +1,245 @@
+h1,.h1,
+h2,.h2,
+h3,.h3,
+h4,.h4,
+h5,.h5,
+h6,.h6
+{
+	line-height: 1.2;
+	font-weight: 900;
+	font-family: $secondary-fontFamily;
+	text-transform: uppercase;
+	color: #333;
+	margin-top: 20px;
+	margin-bottom: 20px;
+	@include transition(color 0.3s ease-in-out);
+
+	&:first-child { margin-top: 0; }
+	&:last-child  { margin-bottom: 0; }
+
+	a { color: inherit; }
+
+	span { font-weight: 100; }
+}
+
+h1,.h1
+{
+	font-size: rem-calc(45px);
+
+	@include media-breakpoint-up(sm)
+	{
+		font-size: rem-calc(55px);
+	}
+
+	@include media-breakpoint-up(md)
+	{
+		font-size: rem-calc(60px);
+	}
+}
+
+h2,.h2
+{
+	font-size: rem-calc(35px);
+
+	@include media-breakpoint-up(sm)
+	{
+		font-size: rem-calc(40px);
+	}
+}
+
+h3,.h3
+{
+	font-size: rem-calc(30px);
+
+	@include min-screen($sm-width)
+	{
+		font-size: rem-calc(30px);
+	}
+}
+
+h4,.h4
+{
+	font-size: rem-calc(20px);
+}
+
+h5,.h5
+{
+	font-size: rem-calc(18px);
+}
+
+h6,.h6
+{
+	font-size: rem-calc(16px);
+}
+
+.special-offer
+{
+	line-height: 1;
+
+	&--style-1
+	{
+		.text
+		{
+			font-size: rem-calc(45px);
+			background-position: 50% 50%;
+			background-repeat: no-repeat;
+
+			background-clip: text;
+			text-fill-color: transparent;
+
+			-webkit-background-clip: text;
+			-webkit-text-fill-color: transparent;
+
+			animation-name: masked-animation;
+			animation-duration: 10s;
+			animation-iteration-count: infinite;
+			animation-timing-function: linear;
+
+			@keyframes masked-animation {
+				0% {background-position: 50% 35%;}
+
+				50% {background-position: 50% 65%;}
+
+				100% {background-position: 50% 35%;}
+			}
+		}
+
+		@include media-breakpoint-up(sm)
+		{
+			.text { font-size: rem-calc(65px); }
+		}
+
+		@include media-breakpoint-up(md)
+		{
+			.text { font-size: rem-calc(85px); }
+		}
+
+		@include media-breakpoint-up(lg)
+		{
+			.text { font-size: rem-calc(100px); }
+		}
+
+		@include media-breakpoint-up(xl)
+		{
+			
+		}
+	}
+
+	&--style-2
+	{
+		.text
+		{
+			font-size: rem-calc(65px);
+			font-family: 'Brusher';
+			text-transform: none;
+		}
+
+		@include media-breakpoint-up(sm)
+		{
+			.text { font-size: rem-calc(95px); }
+		}
+
+		@include media-breakpoint-up(md)
+		{
+			.text { font-size: rem-calc(120px); }
+		}
+
+		@include media-breakpoint-up(lg)
+		{
+			.text { font-size: rem-calc(150px); }
+		}
+
+		@include media-breakpoint-up(xl)
+		{
+			
+		}
+	}
+
+	&--style-3
+	{
+		.text
+		{
+			font-size: rem-calc(50px);
+			font-family: Storytella;
+			font-weight: 400;
+			text-transform: none;
+		}
+
+		@include media-breakpoint-up(sm)
+		{
+			.text { font-size: rem-calc(75px); }
+		}
+
+		@include media-breakpoint-up(md)
+		{
+			.text { font-size: rem-calc(100px); }
+		}
+
+		@include media-breakpoint-up(lg)
+		{
+			.image { margin-right: -30%; }
+		}
+
+		@include media-breakpoint-up(xl)
+		{
+			
+		}
+	}
+}
+
+main
+{
+	p
+	{
+		margin-top: 25px;
+		margin-bottom: 25px;
+
+		&:first-child { margin-top: 0 !important; }
+		&:last-child  { margin-bottom: 0 !important; }
+	}
+}
+
+a
+{
+	color: darken(desaturate($primary-color, 50.55), 17.06);
+	text-decoration: none;
+	outline: none;
+	@include transition(color 0.3s ease-in-out);
+
+	&:hover,
+	&:focus
+	{
+		color: $primary-color;
+		text-decoration: none;
+	}
+}
+
+.section-heading
+{
+	margin-bottom: 60px;
+	line-height: 1.4;
+	font-size: rem-calc(18px);
+	font-weight: 300;
+	color: #b3b3b3;
+
+	&:first-child { margin-top: -5px; }
+
+	.__title { line-height: 1.1; }
+
+	&--left { text-align: left; }
+
+	&--center
+	{
+		margin-left: auto;
+		margin-right: auto;
+		max-width: 600px;
+		text-align: center;
+	}
+
+	&--right { text-align: right; }
+
+	&--white
+	{
+		.__title { color: $white-color; }
+	}
+}

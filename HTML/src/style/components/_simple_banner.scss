@@ -1,0 +1,150 @@
+/* --------------------------------
+   simple banner
+-------------------------------- */
+
+.simple-banner
+{
+	position: relative;
+
+	.__inner { position: relative; }
+}
+
+.simple-banner--style-1
+{
+	background-color: #f1f1f1;
+
+	.banner__text
+	{
+		padding-top: 85px;
+		padding-bottom: 120px;
+	}
+
+	.__title
+	{
+		line-height: 1;
+		text-transform: none;
+
+		b { font-weight: inherit; }
+	}
+
+	.__label
+	{
+		position: absolute;
+		right: 25%;
+		top: 12%;
+		width: 185px;
+		height: 185px;
+		background-color: $primary-color;
+		border-radius: 50%;
+		line-height: 1;
+		font-size: rem-calc(25px);
+		font-weight: 900;
+		text-align: center;
+		color: #bba243;
+
+		span
+		{
+			display: block;
+			text-align: left;
+		}
+
+		.num-1
+		{
+			line-height: 0.8;
+			font-size: rem-calc(80px);
+			color: #333;
+		}
+
+		.num-2
+		{
+			font-size: rem-calc(40px);
+			color: #333;
+		}
+	}
+}
+
+.simple-banner--style-2
+{
+	.img-logo
+	{
+		position: absolute;
+		top: 0;
+		left: 50%;
+		transform: translateX(-50%);
+		z-index: 2;
+	}
+}
+
+.simple-banner--style-3
+{
+	background-color: #fbfbfb;
+	background-image: url(../img/banner_bg_2.png);
+	background-repeat: no-repeat;
+	background-position: bottom 35% left 40%;
+
+	.banner__text
+	{
+		padding-top: 280px;
+		padding-bottom: 140px;
+	}
+
+	.__title
+	{
+		line-height: 0.783;
+		font-size: rem-calc(120px);
+		font-family: 'Storytella';
+		font-weight: 400;
+		color: #ccaf8a;
+		text-transform: none;
+	}
+
+	.__label
+	{
+		position: absolute;
+		top: 7%;
+		right: 26%;
+	}
+}
+
+@include media-breakpoint-up(sm)
+{
+	.simple-banner--style-3
+	{
+		background-position: bottom 35% right;
+
+		.banner__text { padding-top: 140px; }
+
+		.__title
+		{
+			font-size: rem-calc(180px);
+		}
+	}
+}
+
+@include media-breakpoint-up(md)
+{
+	.simple-banner--style-1
+	{
+		background-image: url(../img/banner_bg_1.png);
+		background-repeat: no-repeat;
+		background-position: top right;
+	}
+
+	.simple-banner--style-3
+	{
+		.__title
+		{
+			font-size: rem-calc(230px);
+		}
+	}
+}
+
+@include media-breakpoint-up(lg)
+{
+	
+}
+
+@include media-breakpoint-up(xl)
+{
+	
+}

@@ -1,0 +1,80 @@
+/* 
+	Template Name: Agro
+	Version: 1.1
+*/
+
+@import 'utils/variables';
+@import 'utils/extends';
+@import 'utils/filters';
+@import 'utils/functions';
+@import 'utils/media-queries';
+@import 'utils/mixins';
+@import 'utils/angled-edges';
+
+*
+{
+	padding: 0;
+	margin: 0;
+
+	&,
+	&::before,
+	&::after {
+	  box-sizing: inherit;
+	}
+}
+
+html
+{
+	font-size: $base-font-size;
+	-ms-overflow-style: scrollbar;
+	-webkit-tap-highlight-color: transparent;
+	-webkit-overflow-scrolling: touch;
+	box-sizing: border-box;
+}
+
+body
+{
+	line-height: 1.4;
+	line-height: 1.6;
+	font:
+	{
+		size: rem-calc(14px);
+		family: -apple-system, BlinkMacSystemFont, $base-fontFamily;
+		weight: 400;
+	};
+	color: #666;
+	background-color: $white-color;
+}
+
+ul, ol
+{
+	list-style: none;
+	list-style-image: none;
+	margin: 0;
+}
+
+// Required
+@import "vendors/bootstrap-4/functions";
+@import "vendors/bootstrap-4/variables";
+@import "vendors/bootstrap-4/mixins";
+// Optional
+@import "vendors/bootstrap-4/grid";
+@import "vendors/bootstrap-4/utilities/display";
+@import "vendors/bootstrap-4/utilities/flex";
+@import "vendors/bootstrap-4/images";
+
+@import url(vendors/normalize.css);
+@import url(../fonts/fontello/css/fontello.css);
+
+@import 'vendors-extensions/fontello';
+
+@import 'base/typography';
+
+@import 'layout/header';
+@import 'layout/start-screen';
+@import 'layout/hero';
+
+@import 'components/site_logo';
+@import 'components/navigation';
+@import 'components/buttons';
+@import 'components/forms';

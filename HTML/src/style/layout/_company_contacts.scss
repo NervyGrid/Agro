@@ -1,0 +1,64 @@
+/* --------------------------------
+   company contacts
+-------------------------------- */
+
+$gutter: 30px;
+
+.company-contacts
+{
+	margin-top: $gutter;
+	margin-bottom: $gutter;
+
+	&:first-child { margin-top: 0; }
+	&:last-child  { margin-bottom: 0; }
+
+	.__inner { margin-bottom: -$gutter; }
+
+	.__item
+	{
+		margin-bottom: $gutter;
+		line-height: 1.4;
+		font-size: rem-calc(16px);
+	}
+
+	.__ico
+	{
+		display: inline-block;
+		vertical-align: top;
+		line-height: 1;
+		font-size: 4.5rem;
+		color: $primary-color;
+	}
+
+	a
+	{
+		text-decoration: underline;
+		color: inherit;
+
+		&:hover,
+		&:focus
+		{
+			text-decoration: none;
+		}
+	}
+}
+
+@include media-breakpoint-up(sm)
+{
+	
+}
+
+@include media-breakpoint-up(md)
+{
+	
+}
+
+@include media-breakpoint-up(lg)
+{
+	
+}
+
+@include media-breakpoint-up(xl)
+{
+	
+}

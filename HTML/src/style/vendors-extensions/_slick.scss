@@ -1,0 +1,64 @@
+/* --------------------------------
+   custom slick styles
+-------------------------------- */
+
+.slick-slider { }
+
+.slick-arrow
+{
+	text-align: center;
+	cursor: pointer;
+	z-index: 1;
+}
+
+.slick-dots
+{
+	position: absolute;
+	line-height: 0;
+	font-size: 0;
+
+	li
+	{
+		position: relative;
+		display: inline-block;
+		-webkit-user-select: none;
+		-khtml-user-select: none;
+		-moz-user-select: none;
+		-ms-user-select: none;
+		user-select: none;
+
+		margin-left: 10px;
+
+		&:first-child { margin-left: 0; }
+
+		&.slick-active
+		{
+			button
+			{
+				cursor: default;
+				background-color: $primary-color;
+				border-color: $primary-color;
+			}
+		}
+	}
+
+	button
+	{
+		display: block;
+		width: 12px;
+		height: 12px;
+		padding: 0;
+		cursor: pointer;
+		cursor: hand;
+		color: transparent;
+		border: 2px solid #5b5b5b;
+		outline: none;
+		background: transparent;
+		@include border-radius(50%);
+		@include transition(
+			background-color 0.3s ease-in-out,
+			border-color 0.3s ease-in-out,
+			opacity 0.3s ease-in-out
+		);
+	}
+}

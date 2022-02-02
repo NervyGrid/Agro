@@ -1,0 +1,90 @@
+/* --------------------------------
+   comments list
+-------------------------------- */
+
+$gutter: 30px;
+$img-width: 70px;
+
+.comments-list
+{
+	margin-top: $gutter;
+	margin-bottom: $gutter;
+
+	.comment
+	{
+		margin-top: $gutter/2;
+
+		&__author-img
+		{
+			width: $img-width;
+			margin-right: 20px;
+		}
+
+		&__date-post,
+		&__author-name
+		{
+			display: block;
+			line-height: 1;
+		}
+
+		&__date-post
+		{
+			margin-bottom: 10px;
+			font-size: rem-calc(12px);
+			color: #c1c1c1;
+		}
+
+		&__author-name
+		{
+			font-size: rem-calc(16px);
+			font-family: $secondary-fontFamily;
+			font-weight: 700;
+			color: #333;
+		}
+
+		&__reply
+		{
+			
+		}
+	}
+
+	ul { padding-left: $gutter; }
+}
+
+@include media-breakpoint-up(sm)
+{
+	.comments-list
+	{
+
+	}
+}
+
+@include media-breakpoint-up(md)
+{
+	.comments-list
+	{
+		
+	}
+}
+
+@include media-breakpoint-up(lg)
+{
+	.comments-list
+	{
+		ul
+		{
+			padding-left: $img-width - 20px;
+		}
+	}
+}
+
+@include media-breakpoint-up(xl)
+{
+	.comments-list
+	{
+		ul
+		{
+			padding-left: $img-width + 10px;
+		}
+	}
+}

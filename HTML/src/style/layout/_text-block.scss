@@ -1,0 +1,134 @@
+/* --------------------------------
+   simple text block
+-------------------------------- */
+
+$gutter: 30px;
+
+.simple-text-block
+{
+	background-color: $white-color;
+	padding: 90px 15px;
+
+	&--no-pt { padding-top: 0; }
+	&--no-pb { padding-bottom: 0; }
+
+	.product-description
+	{
+		line-height: 1.2;
+		text-transform: uppercase;
+		color: #1f1f1f;
+
+		.__title,
+		.__name
+		{
+			margin-top: 10px;
+			margin-bottom: 10px;
+
+			&:first-child { margin-top: 0; }
+			&:last-child { margin-bottom: 0; }
+		}
+
+		.__title
+		{
+			font-size: rem-calc(12px);
+			color: #b6b6b6
+		}
+
+		.__name
+		{
+			font-size: rem-calc(22px);
+			font-family: $secondary-fontFamily;
+			font-weight: 900;
+		}
+
+		.__details
+		{
+			&__inner { margin-bottom: -30px; }
+
+			&__item
+			{
+				position: relative;
+				width: 100%;
+				margin-bottom: 30px;
+				line-height: 1;
+			}
+		}
+
+		.__num
+		{
+			font-size: rem-calc(36px);
+			font-weight: 900;
+			color: $primary-color;
+		}
+	}
+
+	.slick-dots
+	{
+		position: relative;
+		text-align: right;
+	}
+}
+
+.simple-text-block--a
+{
+	margin-left: -15px;
+	margin-right: -15px;
+	background-color: #25292b;
+
+	.imgs
+	{
+		img
+		{
+			position: absolute;
+			z-index: -21;
+		}
+	}
+
+	.img_1
+	{
+		top: -6%;
+		left: -11.5%;
+	}
+
+	.img_2
+	{
+		bottom: -20%;
+		left: -19%;
+	}
+
+	.img_3
+	{
+		top: -19%;
+		right: -23%;
+	}
+
+	.img_4
+	{
+		right: -34%;
+		bottom: -33%;
+	}
+}
+
+@include media-breakpoint-up(sm)
+{
+	.simple-text-block--a
+	{
+		margin-left: auto;
+		margin-right: auto;
+	}
+}
+
+@include media-breakpoint-up(md)
+{
+	
+}
+
+@include media-breakpoint-up(lg)
+{
+	
+}
+
+@include media-breakpoint-up(xl)
+{
+	
+}

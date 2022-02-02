@@ -1,0 +1,382 @@
+@@include('template/document_start.html')
+
+	<body>
+		<div id="app">
+			<!-- start header -->
+			<header id="top-bar" class="top-bar top-bar--style-1">
+				<div class="top-bar__bg" style="background-color: #24292c;background-image: url(img/top_bar_bg-1.jpg);background-repeat: no-repeat;background-position: left bottom;"></div>
+
+				<div class="container-fluid">
+					<div class="row align-items-center justify-content-between no-gutters">
+
+						<a class="top-bar__logo site-logo" href="index.html">
+							<img class="img-fluid" src="img/site_logo.png" alt="demo" />
+						</a>
+
+						<a id="top-bar__navigation-toggler" class="top-bar__navigation-toggler top-bar__navigation-toggler--light" href="javascript:void(0);"><span></span></a>
+
+						<div id="top-bar__inner" class="top-bar__inner">
+							<div>
+								<nav id="top-bar__navigation" class="top-bar__navigation navigation" role="navigation">
+									<ul>
+										<li class="has-submenu">
+											<a href="javascript:void(0);">Home</a>
+
+											<ul class="submenu">
+												<li><a href="index.html">Home 1</a></li>
+												<li><a href="index_2.html">Home 2</a></li>
+												<li><a href="index_3.html">Home 3</a></li>
+												<li><a href="index_4.html">Home Shop</a></li>
+											</ul>
+										</li>
+
+										<li>
+											<a href="about.html">About</a>
+										</li>
+
+										<li class="active has-submenu">
+											<a href="javascript:void(0);">Pages</a>
+
+											<ul class="submenu">
+												<li><a href="services.html">Services</a></li>
+												<li class="active"><a href="products.html">Products</a></li>
+												<li><a href="products_details.html">Product Details</a></li>
+												<li><a href="gallery_1.html">Gallery 1</a></li>
+												<li><a href="gallery_2.html">Gallery 2</a></li>
+												<li><a href="typography.html">Typography</a></li>
+												<li><a href="404.html">404 page</a></li>
+											</ul>
+										</li>
+
+										<li class="has-submenu">
+											<a href="javascript:void(0);">Shop</a>
+
+											<ul class="submenu">
+												<li><a href="shop_catalog.html">Shop Catalog</a></li>
+												<li><a href="single_product.html">Single Product</a></li>
+												<li><a href="cart.html">Cart</a></li>
+												<li><a href="checkout.html">Checkout</a></li>
+												<li><a href="sign_in.html">Sign In/Up</a></li>
+											</ul>
+										</li>
+
+										<li>
+											<a href="blog.html">Blog</a>
+										</li>
+
+										<li>
+											<a href="contacts.html">Contacts</a>
+										</li>
+
+										<li class="li-btn">
+											<a class="custom-btn custom-btn--small custom-btn--style-4" href="#">Get in Touch</a>
+										</li>
+									</ul>
+								</nav>
+							</div>
+						</div>
+
+					</div>
+				</div>
+			</header>
+			<!-- end header -->
+
+			<!-- start hero -->
+			<div id="hero" class="jarallax" data-speed="0.7" data-img-position="50% 5%" style="background-image: url(img/intro_img/11.jpg);">
+				<div class="container">
+					<div class="row">
+						<div class="col-12 col-lg-7">
+							<h1 class="__title"><span>major</span> products</h1>
+
+							<p>
+								The point of using Lorem Ipsum is that it has a more-or-less normal distribution of letters, as opposed to using 'Content here, content here', making it look like readable English
+							</p>
+						</div>
+					</div>
+				</div>
+			</div>
+			<!-- end hero -->
+
+			<!-- start main -->
+			<main role="main">
+				<!-- Common styles
+				================================================== -->
+				<link rel="stylesheet" href="css/style.min.css" type="text/css">
+
+				<!-- Load lazyLoad scripts
+				================================================== -->
+				@@include('template/LazyLoad_scripts.html')
+
+				<!-- start section -->
+				<section class="section">
+					<div class="container">
+						<div class="row justify-content-xl-between">
+							<div class="col-12 col-lg col-xl-7">
+								<h2>Agro Farm <span>Ecology Products</span></h2>
+
+								<p>
+									<strong>Agro is a high-quality service, innovative technologies and a wide product range that meet the requirements of modern farmers. Speсtr-Agro is a united team of high-class professionals working for the growth and development of the agricultural business in USA.</strong>
+								</p>
+
+								<p>
+									When the baby greens are ready for harvest, timing and temperature rule the day. And at the perfect moment, the race begins. During the hotter summer months, Earthbound Farm laborers start their day at 3 a.m., harvesting the baby leaves before the temperature reaches 80 degrees, at which point the leaves become too soft to pick. Stan Pura, director of farm operations and one of Earthbound Farm's partners, designed a unique baby-lettuce harvester that picks easily-torn baby greens quickly and consistently. Working in a pattern of overlapping rings, eight people variously direct and drive the machine and put the mechanically picked greens into plastic totes. The harvesting machine has a continuous looping blade that goes through a sharpener with each rotation. After the machine cuts the leaves, it blows them onto a mesh grid that allows small leaves and rocks to fall through.
+								</p>
+							</div>
+
+							<div class="col-12 my-3 d-lg-none"></div>
+
+							<div class="col-12 col-lg-auto  text-center">
+								<img class="img-fluid  lazy" src="img/blank.gif" data-src="img/img_5.png" alt="demo" />
+							</div>
+						</div>
+					</div>
+				</section>
+				<!-- end section -->
+
+				<!-- start section -->
+				<section class="section section--no-pt">
+					<div class="container-fluid">
+						<!-- start products list -->
+						<div class="products-list">
+							<!-- start item -->
+							<div class="__item">
+								<div class="__bg">
+									<div data-jarallax-element="-140" data-speed="0.4">
+										<img class="img-fluid lazy" width="224" height="243" src="img/blank.gif" data-src="img/products_img/bg_1.png" alt="demo"/>
+									</div>
+								</div>
+
+								<div class="__inner">
+									<div class="row align-items-lg-center justify-content-sm-center">
+										<div class="col-12 col-md-9 col-lg-6">
+											<div class="__image">
+												<img class="img-fluid lazy" src="img/blank.gif" data-src="img/products_img/1.jpg" alt="demo"/>
+											</div>
+										</div>
+
+										<div class="col-12 my-3 d-lg-none"></div>
+
+										<div class="col-12 col-md-9 col-lg-6">
+											<div class="__content">
+												<h3 class="__title">The Crops</h3>
+
+												<p>
+													Evulates vast a real proven works discount secure care. Market invigorate a awesome handcrafted bigger comes newer recommended lifetime. Odor to yummy high racy bonus soaking mouthwatering. First superior full-bodied drink. Like outstanding odor economical deal clinically. Odor to yummy high racy bonus soaking
+												</p>
+
+												<p>
+													<a class="custom-btn custom-btn--medium custom-btn--style-1" href="#">Read more</a>
+												</p>
+											</div>
+										</div>
+									</div>
+								</div>
+							</div>
+							<!-- end item -->
+
+							<!-- start item -->
+							<div class="__item">
+								<div class="__bg">
+									<div data-jarallax-element="-140" data-speed="0.4">
+										<img class="img-fluid lazy" width="175" height="309" src="img/blank.gif" data-src="img/products_img/bg_2.png" alt="demo"/>
+									</div>
+								</div>
+
+								<div class="__inner">
+									<div class="row align-items-lg-center justify-content-sm-center">
+										<div class="col-12 col-md-9 col-lg-6">
+											<div class="__image">
+												<img class="img-fluid lazy" src="img/blank.gif" data-src="img/products_img/2.jpg" alt="demo"/>
+											</div>
+										</div>
+
+										<div class="col-12 my-3 d-lg-none"></div>
+
+										<div class="col-12 col-md-9 col-lg-6">
+											<div class="__content">
+												<h3 class="__title">Fresh <span>Fruits</span></h3>
+
+												<p>
+													Evulates vast a real proven works discount secure care. Market invigorate a awesome handcrafted bigger comes newer recommended lifetime. Odor to yummy high racy bonus soaking mouthwatering. First superior full-bodied drink. Like outstanding odor economical deal clinically. Odor to yummy high racy bonus soaking
+												</p>
+
+												<p>
+													<a class="custom-btn custom-btn--medium custom-btn--style-1" href="#">Read more</a>
+												</p>
+											</div>
+										</div>
+									</div>
+								</div>
+							</div>
+							<!-- end item -->
+
+							<!-- start item -->
+							<div class="__item">
+								<div class="__bg">
+									<div data-jarallax-element="-140" data-speed="0.4">
+										<img class="img-fluid lazy" width="196" height="289" src="img/blank.gif" data-src="img/products_img/bg_3.png" alt="demo"/>
+									</div>
+								</div>
+
+								<div class="__inner">
+									<div class="row align-items-lg-center justify-content-sm-center">
+										<div class="col-12 col-md-9 col-lg-6">
+											<div class="__image">
+												<img class="img-fluid lazy" src="img/blank.gif" data-src="img/products_img/3.jpg" alt="demo"/>
+											</div>
+										</div>
+
+										<div class="col-12 my-3 d-lg-none"></div>
+
+										<div class="col-12 col-md-9 col-lg-6">
+											<div class="__content">
+												<h3 class="__title">Farm <span>Livestock</span></h3>
+
+												<p>
+													Evulates vast a real proven works discount secure care. Market invigorate a awesome handcrafted bigger comes newer recommended lifetime. Odor to yummy high racy bonus soaking mouthwatering. First superior full-bodied drink. Like outstanding odor economical deal clinically. Odor to yummy high racy bonus soaking
+												</p>
+
+												<p>
+													<a class="custom-btn custom-btn--medium custom-btn--style-1" href="#">Read more</a>
+												</p>
+											</div>
+										</div>
+									</div>
+								</div>
+							</div>
+							<!-- end item -->
+
+							<!-- start item -->
+							<div class="__item">
+								<div class="__bg">
+									<div data-jarallax-element="-140" data-speed="0.4">
+										<img class="img-fluid lazy" width="199" height="381" src="img/blank.gif" data-src="img/products_img/bg_4.png" alt="demo"/>
+									</div>
+								</div>
+
+								<div class="__inner">
+									<div class="row align-items-lg-center justify-content-sm-center">
+										<div class="col-12 col-md-9 col-lg-6">
+											<div class="__image">
+												<img class="img-fluid lazy" src="img/blank.gif" data-src="img/products_img/4.jpg" alt="demo"/>
+											</div>
+										</div>
+
+										<div class="col-12 my-3 d-lg-none"></div>
+
+										<div class="col-12 col-md-9 col-lg-6">
+											<div class="__content">
+												<h3 class="__title"> Fresh Vegatables</h3>
+
+												<p>
+													Evulates vast a real proven works discount secure care. Market invigorate a awesome handcrafted bigger comes newer recommended lifetime. Odor to yummy high racy bonus soaking mouthwatering.
+												</p>
+
+												<p>
+													First superior full-bodied drink. Like outstanding odor economical deal clinically. Odor to yummy high racy bonus soaking
+												</p>
+
+												<p>
+													<a class="custom-btn custom-btn--medium custom-btn--style-1" href="#">Read more</a>
+												</p>
+											</div>
+										</div>
+									</div>
+								</div>
+							</div>
+							<!-- end item -->
+
+							<!-- start item -->
+							<div class="__item">
+								<div class="__bg">
+									<div data-jarallax-element="-140" data-speed="0.4">
+										<img class="img-fluid lazy" width="281" height="381" src="img/blank.gif" data-src="img/products_img/bg_5.png" alt="demo"/>
+									</div>
+								</div>
+
+								<div class="__inner">
+									<div class="row align-items-lg-center justify-content-sm-center">
+										<div class="col-12 col-md-9 col-lg-6">
+											<div class="__image">
+												<img class="img-fluid lazy" src="img/blank.gif" data-src="img/products_img/5.jpg" alt="demo"/>
+											</div>
+										</div>
+
+										<div class="col-12 my-3 d-lg-none"></div>
+
+										<div class="col-12 col-md-9 col-lg-6">
+											<div class="__content">
+												<h3 class="__title"> Agro <span>Machinery</span></h3>
+
+												<p>
+													Evulates vast a real proven works discount secure care. Market invigorate a awesome handcrafted bigger comes newer recommended lifetime. Odor to yummy high racy bonus soaking mouthwatering.
+												</p>
+
+												<p>
+													First superior full-bodied drink. Like outstanding odor economical deal clinically. Odor to yummy high racy bonus soaking
+												</p>
+
+												<p>
+													<a class="custom-btn custom-btn--medium custom-btn--style-1" href="#">Read more</a>
+												</p>
+											</div>
+										</div>
+									</div>
+								</div>
+							</div>
+							<!-- end item -->
+						</div>
+						<!-- end products list -->
+					</div>
+				</section>
+				<!-- end section -->
+
+				<!-- start section -->
+				<section class="section section--gutter section--gray-bg">
+					<div class="container">
+						<!-- start counters -->
+						@@include('template/counter_3.html')
+						<!-- end counters -->
+					</div>
+				</section>
+				<!-- end section -->
+
+				<!-- start section -->
+				<section class="section section--review  lazy" data-src="img/review_bg_2.png">
+					<div class="container">
+						<div class="section-heading section-heading--center" data-aos="fade">
+							<h2 class="__title">People says <span>about agro</span></h2>
+
+							<p>Latin words, combined with a handful of model sentence structures, to generate Lorem Ipsum which looks reasonable.</p>
+						</div>
+
+						<!-- start review -->
+						@@include('template/review_slider.html')
+						<!-- start review -->
+					</div>
+				</section>
+				<!-- end section -->
+
+				<!-- start section -->
+				<section class="section section--dark-bg">
+					<div class="container">
+						@@include('template/contact_form.html')
+					</div>
+				</section>
+				<!-- end section -->
+
+				<!-- start section -->
+				<section class="section section--no-pt section--no-pb">
+					<!-- this is demo key "AIzaSyBXQROV5YMCERGIIuwxrmaZbBl_Wm4Dy5U" -->
+					<div class="g_map" data-api-key="AIzaSyBXQROV5YMCERGIIuwxrmaZbBl_Wm4Dy5U" data-longitude="44.958309" data-latitude="34.109925" data-marker="img/marker.png" style="min-height: 255px"></div>
+				</section>
+				<!-- end section -->
+			</main>
+			<!-- end main -->
+
+			<!-- start footer -->
+			@@include('template/footer.html')
+			<!-- end footer -->
+		</div>
+
+@@include('template/document_end.html')

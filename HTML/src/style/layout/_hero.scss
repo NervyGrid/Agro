@@ -1,0 +1,55 @@
+/* --------------------------------
+   hero
+-------------------------------- */
+
+#hero
+{
+	min-height: 475px;
+	padding-top: 150px;
+	padding-bottom: 30px;
+	@extend %bg-cover;
+	color: $white-color;
+
+	.__title
+	{
+		line-height: 1.1;
+		color: inherit;
+
+		span
+		{
+			display: block;
+			font-size: percentage(40/60);
+		}
+	}
+}
+
+.top-bar--style-2 + #hero
+{
+	margin-top: 90px;
+}
+
+@include media-breakpoint-up(sm)
+{
+	#hero
+	{
+		padding-top: 195px;
+	}
+}
+
+@include media-breakpoint-up(md)
+{
+	
+}
+
+@include media-breakpoint-up(lg)
+{
+	.top-bar--style-2 + #hero
+	{
+		margin-top: 130px;
+	}
+}
+
+@include media-breakpoint-up(xl)
+{
+	
+}

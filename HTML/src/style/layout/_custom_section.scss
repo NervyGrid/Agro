@@ -1,0 +1,51 @@
+/* --------------------------------
+   section custom
+-------------------------------- */
+
+.section--custom
+{
+	&-02
+	{
+		background-image: url(../img/section_02_bg.png);
+		background-repeat: no-repeat;
+		background-position: center bottom -5%;
+	}
+}
+
+@include media-breakpoint-up(sm)
+{
+	
+}
+
+@include media-breakpoint-up(md)
+{
+	.section--custom
+	{
+		&-02 { background-position: 114% 150%; }
+	}
+}
+
+@include media-breakpoint-up(lg)
+{
+	.section--custom
+	{
+		&-01
+		{
+			background-image: url(../img/section_01_bg.png);
+			background-repeat: no-repeat;
+			background-position: right bottom;
+		}
+
+		&-03
+		{
+			background-image: url(../img/section_03_bg.png);
+			background-repeat: no-repeat;
+			background-position: right top 10%;
+		}
+	}
+}
+
+@include media-breakpoint-up(xl)
+{
+	
+}
